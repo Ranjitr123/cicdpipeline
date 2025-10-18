@@ -101,8 +101,8 @@ app.get('/', (req, res) => {
 
 async function start() {
 try {
-const uri = process.env.MONGODB_URI || 'mongodb://localhost:27017/crud_jwt';
-await mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+// const uri = process.env.MONGODB_URI || 'mongodb://localhost:27017/crud_jwt';
+// await mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 console.log('Connected to MongoDB');
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 } catch (err) {
