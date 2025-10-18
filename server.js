@@ -6,8 +6,8 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
 
-const authRoutes = require('./routes/auth');
-const itemsRoutes = require('./routes/items');
+// const authRoutes = require('./routes/auth');
+// const itemsRoutes = require('./routes/items');
 
 
 const app = express();
@@ -17,8 +17,8 @@ const PORT = process.env.PORT || 4000;
 app.use(bodyParser.json());
 
 
-app.use('/api/auth', authRoutes);
-app.use('/api/items', itemsRoutes);
+// app.use('/api/auth', authRoutes);
+// app.use('/api/items', itemsRoutes);
 
 
 app.get('/', (req, res) => {
